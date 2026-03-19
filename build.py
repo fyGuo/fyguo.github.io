@@ -43,6 +43,9 @@ def generate_index(config):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{config['name']} - {config['institution']}</title>
+    <meta name="description" content="{config['about']}" />
+    <meta name="keywords" content="{config['name']}, epidemiology, biostatistics, public health, research" />
+    <link rel="canonical" href="https://fyguo.github.io/" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -56,6 +59,19 @@ def generate_index(config):
                 <a href="{config.get('cv_file', 'CV.pdf')}" class="nav-link" target="_blank" rel="noopener noreferrer">CV</a>
             </nav>
         </header>
+
+        <script type="application/ld+json">
+        {{
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "{config['name']}",
+            "url": "https://fyguo.github.io/",
+            "sameAs": [
+                "{config['google_scholar']}",
+                "{config['orcid']}"
+            ]
+        }}
+        </script>
 
         <main class="content">
             <section class="about">
