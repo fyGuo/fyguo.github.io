@@ -1,0 +1,94 @@
+{
+  "name": "Fuyu Guo",
+  "title": "PhD Student in Population Health Science",
+  "institution": "Harvard University",
+  "email": "fuyuguo@hsph.harvard.edu",
+  "phone": "+1 571-519-4069",
+  "advisor": "James Robins",
+  "advisor_url": "https://www.hsph.harvard.edu/james-robins/",
+  "google_scholar": "https://scholar.google.com/citations?user=uECVOrYAAAAJ&hl=en",
+  "orcid": "https://orcid.org/0000-0001-8437-8702",
+  "cv_file": "CV.pdf",
+  "about": "I am a PhD student in Population Health Science (Epidemiology track) at Harvard University, advised by James Robins. My research interests include epidemiologic methods, causal inference, missing data methods, and their applications to chronic disease prevention and public health.",
+  "bio2": "I received my M.S. in Epidemiology from Harvard University (2023), advised by Molin Wang, and dual B.S. degrees in Medical Science and Economics from Peking University (2021). I have published papers in both biostatistics and epidemiology, with a focus on methodological innovations and public health applications.",
+  "research_interests": "My research focuses on epidemiologic methods and biostatistics, with applications to chronic disease prevention and public health. I am particularly interested in causal inference, missing data methods, and methodological challenges in observational studies.",
+  "news": [
+    {
+      "date": "March 2026",
+      "content": "I am honored to share that my propsoal with Zhiyu Yan has been awarded by AHA, as a co-investigator."
+    }
+  ],
+  "publications": [
+    {
+      "year": 2025,
+      "title": "Evaluating recommendation-based dietary and physical activity strategies for prostate cancer prevention: a target trial emulation in the Health Professionals Follow-up Study",
+      "authors": "Fuyu Guo, Emma E McGee, Yu-Han Chiu, Edward Giovannucci, Lorelei A Mucci, Barbra A Dickerman",
+      "journal": "American Journal of Epidemiology",
+      "volume": "194",
+      "issue": "2",
+      "pages": "449–459",
+      "journal_url": "https://doi.org/10.1093/aje/kwae184"
+    },
+    {
+      "year": 2024,
+      "title": "New Quadratic Discriminant Analysis Algorithms for Correlated Audiometric Data",
+      "authors": "Guo, Fuyu, et al.",
+      "journal": "Statistics in Medicine",
+      "volume": "43",
+      "issue": "29",
+      "pages": "5473-5483",
+      "journal_url": ""
+    },
+    {
+      "year": 2024,
+      "title": "Comparison between inverse-probability weighting and multiple imputation in Cox model with missing failure subtype",
+      "authors": "Guo F, Langworthy B, Ogino S, Wang M",
+      "journal": "Statistical Methods in Medical Research",
+      "volume": "33",
+      "issue": "2",
+      "pages": "344-356",
+      "journal_url": "https://doi.org/10.1177/09622802231226328"
+    },
+    {
+      "year": 2021,
+      "title": "Urban Greenness and Survival in Lung Cancer Patients: A Registry-Based Cohort Study in Beijing",
+      "authors": "Yang, Lei*, Fuyu Guo*, Ning Wang, Shuo Liu, and others",
+      "journal": "Ecotoxicology and Environmental Safety",
+      "volume": "228",
+      "pages": "113042",
+      "journal_url": "https://doi.org/10.1016/j.ecoenv.2021.113042"
+    }
+  ],
+  "teaching": [
+    {
+      "institution": "Harvard University",
+      "courses": [
+        {
+          "semester": "2024 Fall",
+          "courses_list": ["EPI 207: Advanced Epidemiologic Methods"]
+        },
+        {
+          "semester": "2024 Spring",
+          "courses_list": ["BST 210: Applied Regression Analysis", "BST 206: Introductory Statistics for Medical Research"]
+        },
+        {
+          "semester": "2023 Fall",
+          "courses_list": ["EPI 201: Introduction to Epidemiology: Methods I", "EPI 202: Epidemiologic Methods 2: Elements of Epidemiologic Research", "EPI 207: Advanced Epidemiologic Methods"]
+        },
+        {
+          "semester": "2022 Fall",
+          "courses_list": ["ID 201: Core Principles of Biostatistics and Epidemiology for Public Health"]
+        }
+      ]
+    },
+    {
+      "institution": "Peking University",
+      "courses": [
+        {
+          "semester": "2021 Spring",
+          "courses_list": ["Introduction to Machine Learning"]
+        }
+      ]
+    }
+  ]
+}
