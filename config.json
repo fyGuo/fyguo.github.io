@@ -15,6 +15,10 @@
   "news": [
     {
       "date": "October 2026",
+      "content": "Our poster “Transporting counterfactual prediction models from multiple databases for use in a new target population” has been accepted at the 2026 DahShu Data Science Symposium (DSDSS)."
+    },
+    {
+      "date": "October 2026",
       "content": "Our paper “Taking into account the susceptible window for exposures in Cox proportional hazards model: a way using splines to model the lag-risk relationship” has been accepted by <em>Statistics in Medicine</em>."
     },
     {
