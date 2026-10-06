@@ -59,10 +59,10 @@ body {
 }
 
 .link-icon {
-    width: 1em;
-    height: 1em;
-    margin-right: 6px;
-    vertical-align: -0.125em;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: -0.1em;
 }
 
 /* Main Content */
