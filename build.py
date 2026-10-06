@@ -69,7 +69,6 @@ def generate_index(config):
                 <a href="research.html" class="nav-link">Research</a>
                 <a href="teaching.html" class="nav-link">Teaching</a>
                 <a href="{config.get('cv_file', 'CV.pdf')}" class="nav-link" target="_blank" rel="noopener noreferrer">CV</a>
-                <a href="{config['google_scholar']}" class="nav-link" target="_blank" rel="noopener noreferrer">{SCHOLAR_ICON}Google Scholar</a>
             </nav>
         </header>
 
@@ -204,7 +203,6 @@ def generate_research(config):
                 <a href="research.html" class="nav-link active">Research</a>
                 <a href="teaching.html" class="nav-link">Teaching</a>
                 <a href="{config.get('cv_file', 'CV.pdf')}" class="nav-link" target="_blank" rel="noopener noreferrer">CV</a>
-                <a href="{config['google_scholar']}" class="nav-link" target="_blank" rel="noopener noreferrer">{SCHOLAR_ICON}Google Scholar</a>
             </nav>
         </header>
 
@@ -276,7 +274,6 @@ def generate_teaching(config):
                 <a href="research.html" class="nav-link">Research</a>
                 <a href="teaching.html" class="nav-link active">Teaching</a>
                 <a href="{config.get('cv_file', 'CV.pdf')}" class="nav-link" target="_blank" rel="noopener noreferrer">CV</a>
-                <a href="{config['google_scholar']}" class="nav-link" target="_blank" rel="noopener noreferrer">{SCHOLAR_ICON}Google Scholar</a>
             </nav>
         </header>
 
