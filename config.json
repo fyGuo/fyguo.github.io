@@ -14,6 +14,10 @@
   "research_interests": "My research focuses on epidemiologic methods and biostatistics, with applications to chronic disease prevention and public health. I am particularly interested in causal inference, missing data methods, and methodological challenges in observational studies.",
   "news": [
     {
+      "date": "October 2026",
+      "content": "Our paper “Taking into account the susceptible window for exposures in Cox proportional hazards model: a way using splines to model the lag-risk relationship” has been accepted by <em>Statistics in Medicine</em>."
+    },
+    {
       "date": "March 2026",
       "content": "I am honored to share that my propsoal with Zhiyu Yan has been awarded by AHA, as a co-investigator."
     }
