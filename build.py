@@ -167,7 +167,7 @@ def generate_research(config):
                             {grant['role']}
                         </p>
                         <p class="pub-meta">
-                            <em>{grant['funder']}</em>, {grant['period']}.
+                            <em>{grant['funder']}</em>, {grant['period']}. Grant number: {grant['number']}
                         </p>
                     </div>\n'''
 
@@ -181,8 +181,6 @@ def generate_research(config):
                             <em>{talk['venue']}</em>, {talk['year']}.
                         </p>
                     </div>\n'''
-
-    reviews = config.get('reviews', {})
 
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -221,14 +219,6 @@ def generate_research(config):
                 <h2 style="margin-top: 40px;">Invited Talks</h2>
                 <div class="pub-list">
 {talks_html}                </div>
-
-                <h2 style="margin-top: 40px;">Peer Review</h2>
-                <p style="margin-bottom: 10px;">
-                    {reviews.get('summary', '')}
-                </p>
-                <p style="color: #666;">
-                    {reviews.get('journals', '')}
-                </p>
             </section>
         </main>
 
