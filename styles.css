@@ -58,6 +58,13 @@ body {
     border-bottom-color: #0066cc;
 }
 
+.link-icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 6px;
+    vertical-align: -0.125em;
+}
+
 /* Main Content */
 .content {
     margin-bottom: 60px;
