@@ -37,6 +37,14 @@ def generate_index(config):
                     <p>{item['content']}</p>
                 </div>'''
 
+    awards_html = ""
+    for award in config.get('awards', []):
+        awards_html += f'''
+                <div class="news-item">
+                    <span class="news-date">{award['year']}</span>
+                    <p>{award['title']}, <em>{award['org']}</em></p>
+                </div>'''
+
     html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,6 +107,12 @@ def generate_index(config):
                 </div>
             </section>
 
+            <section class="news">
+                <h2>Honors and Awards</h2>
+                <div class="news-list">{awards_html}
+                </div>
+            </section>
+
             <section class="publications">
                 <h2>Recent Publications</h2>
                 <div class="pub-list">{publications_html}
@@ -143,6 +157,33 @@ def generate_research(config):
                     </div>\n'''
         publications_html += '                </div>\n'
 
+    grants_html = ""
+    for grant in config.get('grants', []):
+        grants_html += f'''                    <div class="pub-item">
+                        <p class="pub-title">
+                            <strong>{grant['title']}</strong>
+                        </p>
+                        <p class="pub-authors">
+                            {grant['role']}
+                        </p>
+                        <p class="pub-meta">
+                            <em>{grant['funder']}</em>, {grant['period']}.
+                        </p>
+                    </div>\n'''
+
+    talks_html = ""
+    for talk in config.get('talks', []):
+        talks_html += f'''                    <div class="pub-item">
+                        <p class="pub-title">
+                            <strong>{talk['title']}</strong>
+                        </p>
+                        <p class="pub-meta">
+                            <em>{talk['venue']}</em>, {talk['year']}.
+                        </p>
+                    </div>\n'''
+
+    reviews = config.get('reviews', {})
+
     html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,7 +200,7 @@ def generate_research(config):
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="research.html" class="nav-link active">Research</a>
                 <a href="teaching.html" class="nav-link">Teaching</a>
-                <a href="#cv" class="nav-link">CV</a>
+                <a href="{config.get('cv_file', 'CV.pdf')}" class="nav-link" target="_blank" rel="noopener noreferrer">CV</a>
             </nav>
         </header>
 
@@ -172,6 +213,22 @@ def generate_research(config):
 
                 <h2 style="margin-top: 40px;">Publications</h2>
                 {publications_html}
+
+                <h2 style="margin-top: 40px;">Grants</h2>
+                <div class="pub-list">
+{grants_html}                </div>
+
+                <h2 style="margin-top: 40px;">Invited Talks</h2>
+                <div class="pub-list">
+{talks_html}                </div>
+
+                <h2 style="margin-top: 40px;">Peer Review</h2>
+                <p style="margin-bottom: 10px;">
+                    {reviews.get('summary', '')}
+                </p>
+                <p style="color: #666;">
+                    {reviews.get('journals', '')}
+                </p>
             </section>
         </main>
 
@@ -198,6 +255,14 @@ def generate_teaching(config):
                 </div>
 '''
 
+    awards_html = ""
+    for award in config.get('awards', []):
+        if award.get('teaching'):
+            awards_html += f'''                <p style="margin-bottom: 10px; color: #666; font-weight: 500;">
+                    <strong>Award:</strong> {award['title']} during the academic year {award['year']}, {award['org']}
+                </p>
+'''
+
     html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -214,17 +279,14 @@ def generate_teaching(config):
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="research.html" class="nav-link">Research</a>
                 <a href="teaching.html" class="nav-link active">Teaching</a>
-                <a href="#cv" class="nav-link">CV</a>
+                <a href="{config.get('cv_file', 'CV.pdf')}" class="nav-link" target="_blank" rel="noopener noreferrer">CV</a>
             </nav>
         </header>
 
         <main class="content">
             <section class="publications">
                 <h2>Teaching Experience</h2>
-                <p style="margin-bottom: 30px; color: #666; font-weight: 500;">
-                    <strong>Award:</strong> Distinction in teaching during the academic year 2023-2024, Harvard Biostatistics Department
-                </p>
-                {teaching_html}
+{awards_html}                {teaching_html}
             </section>
         </main>
 
